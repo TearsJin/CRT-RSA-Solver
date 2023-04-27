@@ -9,10 +9,10 @@ Fs = [
 ]
 
 config = [
-    {'color' : 'r', 'linestyle' : '-.', "label" : '$May_1$'},
-    {'color' : '#87c9c3', 'linestyle' : '-', "label" : '$May_2$'},
-    {'color' : '#fcaf7c', 'linestyle' : ':', "label" : '$BM$'},
-    {'color' : 'k', 'linestyle' : '--', "label" : '$TLP$'}
+    {'color' : '#B36A6F', 'linestyle' : '--', "label" : '$May_1$'},
+    {'color' : '#CEB5B9', 'linestyle' : '--', "label" : '$May_2$'},
+    {'color' : '#AEBFCE', 'linestyle' : '--', "label" : '$BM$'},
+    {'color' : '#98A1B1', 'linestyle' : '--', "label" : '$TLP$'}
 ]
 
 xmin = 0
@@ -59,12 +59,7 @@ plt.title(
     )
 plt.legend() # 添加图例
 
-# 向下着色              
-plt.fill_between(xrange, Y[0],color='r', alpha=0.3)
-plt.fill_between(xrange, Y[1],color='#87c9c3', alpha=0.3)
-plt.fill_between(xrange, Y[2],color='#fcaf7c', alpha=0.3)
-# plt.fill_between(xrange, Y[3],color='k', alpha=0.3)
 plt.axis([xmin,xmax,ymin,ymax])
 # 保存
-plt.savefig('./graph/image/May2BM.png', dpi = 200, bbox_inches = 'tight')
+plt.savefig('./graph/image/Smalldpdq.png', dpi = 200, bbox_inches = 'tight')
 
